@@ -1,0 +1,26 @@
+body {
+  margin: 50px;
+}
+
+p {
+
+  font-family: monospace;
+  font-size: 20px;
+  margin: 10px 100px;
+}
+
+h1{
+  text-align: center;
+}
+
+ol {
+  font-family: monospace;
+  font-size: 20px;
+  background-color: #add;
+}
+
+img {
+ margin: 20px;
+ height: 100px;
+ width: auto;
+}
