@@ -2,13 +2,14 @@
   List of Pets
 </h1>
 
-<div ng-repeat="item in animalArray" >
-<div ng-repeat= "pet in item">
+<div ng-repeat="pet in animalArray.result" >
 
   <ul>
     <ol>Pet Name:  {{pet.name}}, Pet Type:  {{pet.type}}, Pet Age:  {{pet.age}} </ol>
     <img ng-src= "{{ pet.image}}" />
-    <button ng-click="deleteButton(data)">Delete</button>
+      <button class="delete" ng-click="deleteButton(pet)">Delete</button>
+    </div>
+
   </ul>
 
 

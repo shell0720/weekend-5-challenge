@@ -13,6 +13,7 @@ h1{
   text-align: center;
 }
 
+
 ol {
   font-family: monospace;
   font-size: 20px;
@@ -23,4 +24,8 @@ img {
  margin: 20px;
  height: 100px;
  width: auto;
+}
+
+.delete {
+  float: right;
 }

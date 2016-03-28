@@ -21,9 +21,9 @@ myApp.factory("PetManager", ["$http", function($http){
   };
 
   var deleteData = function(data){
-    $http.delete("/pets", data).then(function(response){
+    $http.delete("/pets/"+data._id).then(function(response){
       console.log(data);
-      console.log(response.data.name);
+      console.log(response.data);
       getData();
     });
   }

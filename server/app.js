@@ -40,9 +40,9 @@ app.post("/pets", function(req,res){
 
 });
 
-app.delete('/pets', function(req,res){
-    console.log(req.body);
-    Pet.findOneAndRemove({"name" :req.body.name}, function(err, data){
+app.delete('/pets/:id', function(req,res){
+    console.log(req.params);
+    Pet.findByIdAndRemove(req.params.id, function(err, data){
         if(err) console.log(err);
         res.send(data);
     });

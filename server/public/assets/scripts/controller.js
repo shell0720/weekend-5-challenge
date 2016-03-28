@@ -10,7 +10,7 @@ myApp.controller("ShowController", ["$scope", "PetManager", function($scope, Pet
   $scope.animalArray = PetManager.data;
   PetManager.getData();
   $scope.deleteButton = function(data){
-      //how to associate the button with the delete information? 
+      //how to associate the button with the delete information?
     PetManager.deleteData(data);
     console.log("meow");
 
